@@ -1,0 +1,6 @@
+.maincontainer{
+    border: solid black 1px;
+    height: 800px;
+    width: 70%;
+    float: left;
+}
