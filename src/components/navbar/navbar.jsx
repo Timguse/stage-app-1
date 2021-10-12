@@ -12,7 +12,7 @@ class Navbar extends Component {
                         <td><a href="index.js">Home</a></td>
                         <td><a href="index.js">Media</a></td>
                         <td><a href="index.js">Info</a></td>
-                        <td><a href="indes.js">Contact</a></td>
+                        <td><a href="index.js">Contact</a></td>
                     </tr>
                 </thead>
             </nav>
