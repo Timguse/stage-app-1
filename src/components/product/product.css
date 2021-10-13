@@ -1,5 +1,5 @@
 .product{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 250px;
     height: 300px;
     background-color: rgb(235, 235, 235);
@@ -11,7 +11,7 @@
 .imageblok{
     width: 150px;
     height: 200px;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
