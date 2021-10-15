@@ -3,12 +3,8 @@ import './maincontainer.css';
 import Shop from '../pages/shop';
 import Navbar from './navbar/navbar';
 import Gegevens from '../pages/gegevens';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import Home from '../pages/home';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 class Maincontainer extends Component {
     render() {
@@ -17,7 +13,7 @@ class Maincontainer extends Component {
                 <div className="maincontainer">
                     <Navbar />
                     <Switch>
-                        <Route path="/" exact component={Home} />
+                        <Route path="/" exact component={home} />
                         <Route path="/Gegevens" component={Info} />
                         <Route path="/shop" exact component={shop} />
                     </Switch>
@@ -26,9 +22,9 @@ class Maincontainer extends Component {
         );
     }
 }
-const Home = () => (
+const home = () => (
     <div>
-        <h1>hoi</h1>
+        <Home/>
     </div>
 );
 const Info = () => (
