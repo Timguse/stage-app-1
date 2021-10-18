@@ -1,6 +1,5 @@
 import React, {  } from 'react'
 import "./button.css";
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function LogOut(){
     return (

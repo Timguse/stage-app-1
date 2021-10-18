@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
-import './navbar.css'
+import React from "react";
 import { Link } from 'react-router-dom'
 
-class Navbar extends Component {
-    render() {
-        return <div>
-            <nav className="navbar">
+function bla() {
+    return (
+            <div className="Topnav" id="myTopnav">
                 <br />
                 <thead>
                     <tr>
-                        <Link to="/">
+                        <Link to="/" className="active">
                             <td>Home</td>
                         </Link>
                         <Link to="/shop">
@@ -20,8 +18,9 @@ class Navbar extends Component {
                         </Link>
                     </tr>
                 </thead>
-            </nav>
-        </div >;
-    }
-};
-export default Navbar;
+            </div>
+           
+            
+    );
+}
+export default bla;
