@@ -1,6 +1,8 @@
 import axios from "axios";
 import env from "react-dotenv";
 
+const baseURL = env.baseURL;
+
 class AuthorizedService {
   constructor() {
     this.http = axios.create({
