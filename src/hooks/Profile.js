@@ -2,13 +2,11 @@ import { useCallback, useMemo, useState } from "react";
 import ProfileService from "../services/ProfileService";
 
 export function useProfile() {
-    const [isUpdating, setIsUpdating] = useState(false);
     const [loading, setLoading] = useState(false);
     const [profileData, setProfileData] = useState();
 
     // Admin
     const getProfileData = useCallback((async = false) => {
-        setIsUpdating(true);
         if (!async) {
             setLoading(true);
         }
@@ -27,10 +25,10 @@ export function useProfile() {
                 return error.response;
             });
     });
+
     return useMemo(() => {
         return {
             // state variables
-            isUpdating,
             loading,
             // data variables
             profileData,
@@ -39,7 +37,6 @@ export function useProfile() {
         };
     }, [
         // state variables
-        isUpdating,
         loading,
         // data variables
         profileData,
@@ -47,4 +44,3 @@ export function useProfile() {
         getProfileData,
     ]);
 }
-export default { useProfile };

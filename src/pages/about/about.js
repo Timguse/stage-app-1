@@ -6,14 +6,21 @@ import LogOut from '../../components/shared/Authentication/LogoutButton';
 import Info from '../../components/info/info';
 import { FaBeer } from 'react-icons/fa';
 
-import ProfileService from '../../services/ProfileService';
+import useProfile from '../../hooks/Profile';
 
 function Gegevens() {
+    const {
+        // loading,
+        profileData,
+        getProfileData,
+      } = useProfile();
 
     const [showProfileData, setShowProfileData] = useState(false);
     const [loading, setLoading] = useState(true);
 
     const name = "Tim";
+
+    // useeffect moet hier komen
 
     setTimeout(() => {
         setLoading(false);
