@@ -6,13 +6,14 @@ import LogOut from '../../components/shared/Authentication/LogoutButton';
 import Info from '../../components/info/info';
 import { FaBeer } from 'react-icons/fa';
 
+import ProfileService from '../../services/ProfileService';
+
 function Gegevens() {
 
     const [showProfileData, setShowProfileData] = useState(false);
     const [loading, setLoading] = useState(true);
 
     const name = "Tim";
-
 
     setTimeout(() => {
         setLoading(false);

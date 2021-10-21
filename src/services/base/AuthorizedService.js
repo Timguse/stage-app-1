@@ -1,7 +1,7 @@
 import axios from "axios";
 import env from "react-dotenv";
 
-const baseURL = env.baseURL;
+const baseURL = "http://localhost:9999";
 
 class AuthorizedService {
   constructor() {
