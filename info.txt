@@ -1,0 +1,13 @@
+- creeër een een folder vanaf app root genaamd "services"  
+- installer axios in npm
+
+
+
+git checkout main
+git merge stage-app-1
+
+SERVER:
+- aparte shell starten
+- cd /api 
+- node server.js
+check host+port+endpoint!
