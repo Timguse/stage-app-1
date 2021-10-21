@@ -44,3 +44,5 @@ export function useProfile() {
         getProfileData,
     ]);
 }
+
+export default useProfile;
