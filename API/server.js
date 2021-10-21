@@ -5,7 +5,7 @@ const app = express();
 const router = require('./router.js');
 
 const hostname = 'localhost';
-const port = 9999;
+const port = 9999 || 12000;
 
 app.use('/', router);
 

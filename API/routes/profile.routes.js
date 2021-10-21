@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Mocked data 
-router.get('/', (req, res) => {
+router.get('/tim', (req, res) => {
 
   const profile = {
     name: "tim",
