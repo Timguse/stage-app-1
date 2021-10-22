@@ -1,16 +1,17 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 // Mocked data 
-router.get('/tim', (req, res) => {
+router.get("/tim", (req, res) => {
 
-  const profile = {
-    name: "tim",
-    role: "user",
-    phone: "0612345678",
-  }
+    const profile = {
+        name: "Tim Guse",
+        role: "user",
+        email: "tguse@gmail.com",
+        phone: "0612345678",
+    };
 
-  res.json(profile)
+    res.json(profile);
 });
 
 module.exports = router;

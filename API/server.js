@@ -1,20 +1,24 @@
-const http = require('http');
-const express = require('express');
+const http = require("http");
+const express = require("express");
 const app = express();
+const cors = require('cors');
 
-const router = require('./router.js');
+const router = require("./router.js");
 
-const hostname = 'localhost';
+const hostname = "localhost";
 const port = 9999 || 12000;
 
-app.use('/', router);
+const corsConfig = {
+    origin: '*',
+    optionsSuccessStatus: 200 // For legacy browser support
+};
 
-// app.get('/', function (req, res) {
-//   res.send('Hello World!')
-// })
+app.use(cors(corsConfig));
+
+app.use("/", router);
 
 const server = http.createServer(app);
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server running at http://${hostname}:${port}/`);
 });

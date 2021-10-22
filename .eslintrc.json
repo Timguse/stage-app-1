@@ -1,0 +1,36 @@
+{
+    "extends": [
+        //"eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "jsx-a11y",
+        "react"
+    ],
+    "rules": {
+        "semi": 1,
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-unused-vars": "warn",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        // "no-use-before-define": [
+        //     "error",
+        //     {
+        //         "functions": false,
+        //         "classes": true,
+        //         "variables": true
+        //     }
+        // ],
+        "camelcase": "off",
+        "react-hooks/exhaustive-deps": "off"
+    }
+}

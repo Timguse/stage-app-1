@@ -1,8 +1,6 @@
 - creeër een een folder vanaf app root genaamd "services"  
 - installer axios in npm
 
-
-
 git checkout main
 git merge stage-app-1
 

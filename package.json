@@ -11,7 +11,9 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^5.1.3",
+    "axios": "^0.23.0",
+    "bootstrap": "^5.1.1",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.0",
@@ -26,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "api": "cd ./API && node server.js",
     "eject": "react-scripts eject",
     "abc": "node ./test.js"
   },
@@ -52,5 +55,8 @@
       "baseURL",
       "PORT"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0"
   }
 }
