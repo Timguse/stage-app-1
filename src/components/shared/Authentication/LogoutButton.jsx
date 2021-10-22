@@ -1,10 +1,11 @@
 import React, {  } from 'react'
 import "./LogoutButton.css";
- 
+import Button from '@mui/material/Button';
+
 function LogOut(){
     return (
         <div>
-            <button className="Logout" onClick={uitloggen}>Uitloggen</button>
+            <Button variant="contained" onClick={uitloggen}>Uitloggen</Button>
         </div>
     );
 
@@ -12,4 +13,4 @@ function LogOut(){
         alert ("Kan niet uitloggen");
     }
 }
-export default LogOut;
+export default LogOut; 

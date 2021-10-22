@@ -9,7 +9,7 @@ class Navbar extends Component {
             <br />
                 <thead>
                     <tr>
-                    <br />
+                        <br />
                         <Link to="/">
                             <td>Home</td>
                         </Link>
@@ -19,7 +19,6 @@ class Navbar extends Component {
                         <Link to="/Gegevens">
                             <td className="Gegevens">Gegevens</td>
                         </Link>
-                        
                     </tr>
                 </thead>
             </nav>
