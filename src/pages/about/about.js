@@ -1,30 +1,28 @@
-import React, { useState } from 'react';
-import './about.css';
+import React, { useState, useEffect } from "react";
+import "./about.css";
 //import ProfileImage from './images/image';
-import Footer from '../../components/footer/footer';
-import LogOut from '../../components/shared/Authentication/LogoutButton';
-import Info from '../../components/info/info';
-import { FaBeer } from 'react-icons/fa';
+import Footer from "../../components/footer/footer";
+import LogOut from "../../components/shared/Authentication/LogoutButton";
+import Info from "../../components/info/info";
+import { FaBeer } from "react-icons/fa";
 
-import useProfile from '../../hooks/Profile';
+import useProfile from "../../hooks/Profile";
 
 function Gegevens() {
     const {
         // loading,
         profileData,
         getProfileData,
-      } = useProfile();
+    } = useProfile();
 
     const [showProfileData, setShowProfileData] = useState(false);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const name = "Tim";
 
-    // useeffect moet hier komen
-
-    setTimeout(() => {
-        setLoading(false);
-    }, 3 * 1000);
+    useEffect(() => {
+        getProfileData(false); // initial render
+    }, []);
 
     if (loading) {
         return <p>page is loading...</p>
@@ -33,18 +31,18 @@ function Gegevens() {
     function toggleButtonProfileData() {
         setShowProfileData((bool) => {
             return !bool;
-        })
+        });
     }
 
     return (
         <div>
             {showProfileData && (
                 <div className="infobox" id="info">
-                    <Info />
+                    <Info data={profileData} />
                     <br />
                 </div>
             )}
-             {!showProfileData && (
+            {!showProfileData && (
                 <div className="infobox2" id="info">
                     <h3> Lets go for a <FaBeer />? </h3>
                     <br />

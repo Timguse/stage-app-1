@@ -1,6 +1,6 @@
 import AuthorizedService from "./base/AuthorizedService";
 
-const baseURL = "http://localhost:9999/";
+const baseURL = "http://localhost:9999";
 
 class ProfileService extends AuthorizedService {
     getProfileData() {

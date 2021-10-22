@@ -8,16 +8,16 @@ const
     email = "tguse@gmail.com",
     tel = "0654342321";
 
-function Info() {
+function Info(data) {
     return (
         <div>
             <div className="Profielpicture">
                 <ProfileImage />
             </div>
             <div className="tekstblok">
-                <h2 className="infotext">{Name + last_name}</h2>
-                <h3 className="infotext">{email}</h3>
-                <h3 className="infotext">{tel}</h3>
+                <h2 className="infotext">{data.name || Name + last_name}</h2>
+                <h3 className="infotext">{data.email || email}</h3>
+                <h3 className="infotext">{data.phone || tel}</h3>
             </div>
         </div>
     );
