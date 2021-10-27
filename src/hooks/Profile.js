@@ -4,7 +4,7 @@ import ProfileService from "../services/ProfileService";
 export function useProfile() {
     const [loading, setLoading] = useState(false);
     const [profileData, setProfileData] = useState();
-
+    
     // Admin
     const getProfileData = useCallback((async = false) => {
         if (!async) {

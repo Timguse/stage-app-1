@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import ProfileImage from '../../pages/images/image';
 import '../../pages/about/about';
 

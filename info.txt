@@ -9,3 +9,6 @@ SERVER:
 - cd /api 
 - node server.js
 check host+port+endpoint!
+
+FLOW:
+API->services->hooks->react component
