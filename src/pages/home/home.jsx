@@ -3,6 +3,7 @@ import './home.css';
 import Profilefoto from "../../assets/images/mountains.jpg";
 import Contactform from "../../components/contact/contactform";
 import Contactbutton from "../../components/shared/Authentication/contactbutton.jsx";
+import Footer from "../../components/footer/footer";
 
 function Home() {
     return (
@@ -46,6 +47,7 @@ function Home() {
                 </div>
                 <Contactform/>
             </div>
+            <Footer />
         </div>
     );
     

@@ -48,7 +48,7 @@ function Gegevens() {
             )}
             <div className="main">
                 <div className="text_main">
-                    <h1 className="maintext">Hoi <br/>Ik ben Tim</h1>
+                    <h1 className="maintext">Hoi <br/>Ik ben {getProfileData}</h1>
                     <button onClick={toggleButtonProfileData} className="button_gegevens">Mijn Gegevens</button><br/><br/>
                     <Contactbutton/>
                 </div>

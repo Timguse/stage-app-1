@@ -5,6 +5,7 @@
     background-color: rgb(1, 10, 14);
     display: flex;
     float: left;
+    position: fixed;
 }
 a{
     color: white;
