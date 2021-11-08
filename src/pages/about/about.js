@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./about.css";
-//import ProfileImage from './images/image';
 import Footer from "../../components/footer/footer";
 import LogOut from "../../components/shared/Authentication/LogoutButton";
 import Info from "../../components/info/info";
 import useProfile from "../../hooks/Profile";
 import mauntains from "../../assets/images/mountains.jpg";
-import profileData from "../../hooks/Profile"
+import Contactbutton from "../../components/shared/Authentication/contactbutton";
+//import ProfileService from "../../services/ProfileService";
 
 function Gegevens() {
     const {
@@ -25,7 +25,7 @@ function Gegevens() {
     }, []);
 
     if (loading) {
-        return <p>page is loading...</p>
+        return <p>page is loading...</p>;
     };
 
     function toggleButtonProfileData() {
@@ -33,13 +33,13 @@ function Gegevens() {
             return !bool;
         });
     }
+
     return (
         <div>
-
             {showProfileData && (
                 <div className="infobox" id="info">
                     <Info data={profileData} />
-                    <br />
+                    
                 </div>
             )}
             {!showProfileData && (
@@ -48,40 +48,9 @@ function Gegevens() {
             )}
             <div className="main">
                 <div className="text_main">
-                    <LogOut />
-                    <br />
-                    <h1>Welkom {useProfile.name}</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero ex, volutpat nec felis ac, imperdiet rutrum arcu. Nam volutpat viverra erat. Phasellus congue nisl at urna hendrerit dignissim. In pellentesque leo ac rhoncus dapibus. Duis quis aliquam nisi. Nullam tristique porttitor semper. Morbi non laoreet urna. Aliquam tincidunt, urna quis fermentum finibus, dui nisi vulputate ligula, vel sodales nunc ligula a nisi. Aenean et mattis metus. Donec sit amet nisi ac augue convallis convallis id at odio. Ut pulvinar urna iaculis diam pretium scelerisque. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Praesent porta commodo scelerisque. Phasellus ac posuere magna.
-                    </p>
-                    <button onClick={toggleButtonProfileData}>Mijn Gegevens</button>
-                    <a className="link-main2" href="#main2">main2</a>
-                    <div id="main2">
-                        <div className="responsive">
-                            <div className="gallery">
-                                <a target="blank" href={mauntains}>
-                                    <img src={mauntains} alt="Cinque Terre" width="600" height="400" />
-                                </a>
-                                <div className="desc">Add a description of the image here</div>
-                            </div>
-                        </div>
-                        <div className="responsive">
-                            <div className="gallery">
-                                <a target="blank" href={mauntains}>
-                                    <img src={mauntains} alt="Forest" width="600" height="400" />
-                                </a>
-                                <div className="desc">Add a description of the image here</div>
-                            </div>
-                        </div>
-                        <div className="responsive">
-                            <div className="gallery">
-                                <a target="blank" href={mauntains}>
-                                    <img src={mauntains} alt="Forest" width="6500" height="400" />
-                                </a>
-                                <div className="desc">Add a description of the image here</div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 className="maintext">Hoi <br/>Ik ben Tim</h1>
+                    <button onClick={toggleButtonProfileData} className="button_gegevens">Mijn Gegevens</button><br/><br/>
+                    <Contactbutton/>
                 </div>
             </div><br />
             <Footer />

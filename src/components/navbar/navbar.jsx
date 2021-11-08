@@ -19,9 +19,6 @@ class Navbar extends Component {
                         <Link to="/Gegevens">
                             <td className="Gegevens">Gegevens</td>
                         </Link>
-                        <Link to="/contact">
-                            <td>contact</td>
-                        </Link>
                     </tr>
                 </thead>
             </nav>
