@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 .maincontainer{
     /* border: solid black 1px; */
     height: 800px;

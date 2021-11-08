@@ -6,12 +6,9 @@ import './contactbutton.css';
 function Contactbutton() {
     return(
         <div>
-            <button onClick={handleButton} className="Contact-button">Contact</button>
+            <button className="Contact-button"><a href="/#section3">Contact</a></button>
         </div>
     );
-}
-function handleButton(){ 
-    alert= "hoi";
 }
 
 export default Contactbutton;
