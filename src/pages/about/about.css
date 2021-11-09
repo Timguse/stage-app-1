@@ -4,13 +4,13 @@ body{
 .infobox{
     background-color: rgb(1, 10, 14);
     width: 280px;
-    height: 1100px;
+    height: 800px;
     float: left;
 }
 .infobox2{
     background-color: rgb(0, 0, 0);
     width: 100px;
-    height: 1100px;
+    height: 800px;
     float: left;
 }
 
@@ -48,4 +48,10 @@ body{
     margin-top: 200px;
     margin-left: 200px;
     height: 100px;
+}
+.social-footer{
+    height: 60px;
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 300px;
 }

@@ -5,8 +5,7 @@ import Navbar from './navbar/navbar';
 import Gegevens from '../pages/about/about';
 import Home from '../pages/home/home';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-//import Bla from './navbar/bla';
-
+import Footer from './footer/footer';
 class Maincontainer extends Component {
     render() {
         return (
@@ -18,9 +17,12 @@ class Maincontainer extends Component {
                         <Route path="/Gegevens" component={Infopage} />
                         <Route path="/shop" exact component={shop} />
                     </Switch>
+                    <Footer/>
                 </div>
             </Router>
+            
         );
+        
     }
 }
 const home = () => (

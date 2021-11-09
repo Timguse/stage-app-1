@@ -47,7 +47,6 @@ function Home() {
                 </div>
                 <Contactform/>
             </div>
-            <Footer />
         </div>
     );
     
