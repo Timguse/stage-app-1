@@ -9,6 +9,9 @@ router.get("/tim", (req, res) => {
         role: "user",
         email: "tguse@gmail.com",
         phone: "0612345678",
+        address: "Lambertus hortensiuslaan",
+        postcode: "1402 sw",
+        city: "Bussum",
     };
 
     res.json(profile);

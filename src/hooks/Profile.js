@@ -7,14 +7,12 @@ export function useProfile() {
     
     // Admin
     const getProfileData = useCallback((async = false) => {
-        if (!async) {
-            setLoading(true);
-        }
+    
         return ProfileService.getProfileData()
             .then((data) => {
                 if (!async) {
-                    setLoading(false);
                     setProfileData(data);
+                    setLoading(true);
                 }
                 return data;
             })

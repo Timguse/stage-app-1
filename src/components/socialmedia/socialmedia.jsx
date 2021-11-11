@@ -23,13 +23,13 @@ function Socialmedia() {
     return (
         <div>
             <img src={Facebook} className="socialmedia" 
-            onClick={facebooksite}></img>
+            onClick={facebooksite} target="_blank"></img>
             <img src={Instagram} className="socialmedia" 
-            onClick={instagramsite}></img>
+            onClick={instagramsite} target="_blank"></img>
             <img src={Linktin} className="socialmedia" 
-            onClick={linktinsite}></img>
+            onClick={linktinsite} target="_blank"></img>
             <img src={Tiktok} className="socialmedia" 
-            onClick={tiktoksite}></img>
+            onClick={tiktoksite} target="_blank"></img>
         </div>
 
     );

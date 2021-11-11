@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.card_container{
+    width: 100%;
+    height: 800px;
+}
+.text_winkelmand{
+    border: 1px solid white; 
+    height: 400px;
+}
+.title_card{
+    color: white;
+}
+.product_card{
+    color: white;
+}

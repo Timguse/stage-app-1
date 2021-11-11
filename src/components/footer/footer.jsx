@@ -22,7 +22,7 @@ function Footer(){
             <div className="line-footer"></div><br/>
             <div className="social-footer">
         	    <Socialmedia />
-                
+                <p className="socialmedia-text">iewiiwefijow feijo ik ehuduh</p>
             </div>
         </div>
     );

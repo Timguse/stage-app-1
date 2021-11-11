@@ -28,7 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "api": "cd ./API && node server.js",
+    "api": "cd ./API && nodemon server.js",
     "eject": "react-scripts eject",
     "abc": "node ./test.js"
   },

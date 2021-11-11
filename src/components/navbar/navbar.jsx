@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import winkelmand from "../../assets/images/winkelmand.jpg";
 
 class Navbar extends Component {
     render() {
@@ -18,6 +19,9 @@ class Navbar extends Component {
                         </Link>
                         <Link to="/Gegevens">
                             <td className="Gegevens">Gegevens</td>
+                        </Link>
+                        <Link to="/card">
+                            <img src={winkelmand} width={"30px"} className="winkelmand"></img>
                         </Link>
                     </tr>
                 </thead>
