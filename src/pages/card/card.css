@@ -7,10 +7,12 @@ body{
 }
 .text_winkelmand{
     border: 1px solid white; 
-    height: 400px;
+    height: 800px;
+    background-color: white;
 }
 .title_card{
-    color: white;
+    color: rgb(3, 3, 3);
+
 }
 .product_card{
     color: white;

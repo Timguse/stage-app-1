@@ -1,0 +1,14 @@
+.Logout {
+    background-color: rgb(61, 61, 252);
+    color: white;
+    text-align: center;
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.Gegevens {
+    text-align: right;
+}

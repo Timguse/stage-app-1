@@ -1,20 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './product.css';
 import Image from './images/image';
+import useShop from "../../hooks/shop";
 
-class Product extends Component {
+
+
+function Product() {
     
-    render() { 
         return <div className="product">
             <div className="imageblok">
                 <Image />
-                {/* <button
-                    onClick={() => this.handleIncrement({ id: 1 })}>+
-                </button> */}
+                <br/>
+                <div className="infobox_shop">
+                <p className="shop_text">{}</p>
+            </div>
+            <br/>
             </div>
         </div>;
     }
-}
+
 
 // handleIncrement = product => {
 //     console.log(product);

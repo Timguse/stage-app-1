@@ -1,5 +1,6 @@
 import React, {  } from 'react';
 import '../about/about';
+import './shop.css';
 import Product from '../../components/product/product';
 
 
