@@ -35,7 +35,7 @@ export function useShop() {
         };
     }, [
         // state variables
-        loading,
+        loading, 
         // data variables
         ShopData,
         // methods

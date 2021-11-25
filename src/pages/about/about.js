@@ -17,7 +17,7 @@ function Gegevens() {
 
     useEffect(() => {
         getProfileData(false); // initial render
-        console.log(profileData)
+        console.log(profileData);
     }, []);
 
     if (loading) {

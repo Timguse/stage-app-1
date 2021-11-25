@@ -1,16 +1,17 @@
+const productList = require("../producten/productlist");
+
 const express = require("express");
 const router = express.Router();
 
+
 // Mocked data 
-router.get("/shop", (req, res) => {
+router.get("/:category", (req, res) => {
 
-    const product = {
-        Product1: "shirt",
-        Prijs: "19,95",
-       
-    };
+    const category = req.params.category;
 
-    res.json(product);
+    const output = productList[category]; 
+
+    res.json(output);
 });
 
 module.exports = router;
