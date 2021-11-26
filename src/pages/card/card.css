@@ -57,3 +57,13 @@ body{
     margin-left: -40px;
     margin-bottom: 0;
 }
+.textblok_card{
+    height: 340px;
+}
+.betalen_card{
+    background-color: rgb(12, 245, 24);
+    width: 100px;
+    height: 60px;
+    margin-top: 200px;
+
+}

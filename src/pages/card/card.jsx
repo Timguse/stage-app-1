@@ -40,19 +40,26 @@ function Card() {
                         <div className="blok2-card">
                             <h2 className="gegevens_title">Jouw gegevens</h2>
                             <br />
-                            <p className="infotext">Naam: {profileData?.name}</p>
-                            <p className="infotext">Email: {profileData?.email}</p>
-                            <p className="infotext">Telefoonnummer: {profileData?.phone}</p>
-                            <p className="infotext">Postcode: {profileData?.postcode}</p>
-                            <p className="infotext">Address: {profileData?.address}</p>
-                            <p className="infotext">Stad: {profileData?.city}</p>
+                            <div className="textblok_card">
+                                <p className="infotext">Naam: {profileData?.name}</p>
+                                <p className="infotext">Email: {profileData?.email}</p>
+                                <p className="infotext">Telefoonnummer: {profileData?.phone}</p>
+                                <p className="infotext">Postcode: {profileData?.postcode}</p>
+                                <p className="infotext">Address: {profileData?.address}</p>
+                                <p className="infotext">Stad: {profileData?.city}</p>
+                            </div>
                             <button className="togglebutton_card" onClick={toggleButtonPayData2}>Door naar afrekenen</button>
+
                         </div>
                     )}
                     {showPayData && (
                         <div className="blok2-card2" id="info">
                             <h2 className="gegevens_title">Afrekenen</h2>
-                            <h3 className="prijs_title">Prijs:</h3>
+                            <br/>
+                            <div className="textblok_card">
+                                <h3 className="prijs_title">Prijs:</h3>
+                                <button className="betalen_card">Betalen</button>
+                            </div>
                             <button className="togglebutton_card" onClick={toggleButtonPayData2}>Gegevens bekijken</button>
 
                         </div>

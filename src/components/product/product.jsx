@@ -4,7 +4,6 @@ import Image from './images/image';
 import useShop from "../../hooks/shop";
 
 
-
  function Product() {
     const {
         // loading,
@@ -26,10 +25,10 @@ import useShop from "../../hooks/shop";
     <div className="product">
         <div className="imageblok">
             <Image />
-            <br />
+            <br />          
             <div className="infobox_shop">
                 <p className="shop_text">
-                    Prijs:{shopData} shirt
+                    Prijs:{shopData?.productList[shirts]} shirt
                 </p>
                 <button className="winkelmand2">winkelmand toevoegen</button>
             </div>
