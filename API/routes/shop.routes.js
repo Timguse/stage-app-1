@@ -14,5 +14,5 @@ router.get("/:category", (req, res) => {
     res.json(output);
 });
 
-module.exports = router;
+module.exports = router;                   
 

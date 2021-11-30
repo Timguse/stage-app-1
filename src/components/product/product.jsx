@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import './product.css';
 import Image from './images/image';
 import useShop from "../../hooks/shop";
@@ -16,10 +16,9 @@ import useShop from "../../hooks/shop";
 
 
     useEffect(() => {
-        getShopData(false); // initial render
+        getShopData(false); // initial render-*/
         console.log(shopData);
     }, []);
-
 
     return (
     <div className="product">
