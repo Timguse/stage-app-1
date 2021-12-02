@@ -3,7 +3,6 @@ import './product.css';
 import Image from './images/image';
 import useShop from "../../hooks/shop";
 
-
  function Product() {
     const {
         // loading,
@@ -13,7 +12,6 @@ import useShop from "../../hooks/shop";
 
     const [ShowShopData, setShowShopData] = useState(false);
     const [loading, setLoading] = useState(false);
-
 
     useEffect(() => {
         getShopData(false); // initial render-*/
@@ -27,11 +25,11 @@ import useShop from "../../hooks/shop";
             <br />          
             <div className="infobox_shop">
                 <p className="shop_text">
-                    Prijs:{shopData?.productList[shirts]} shirt
+                    Prijs:{shopData?.products.shirts}
                 </p>
                 <button className="winkelmand2">winkelmand toevoegen</button>
             </div>
-            <br />
+            <br/>
         </div>
     </div>
     );

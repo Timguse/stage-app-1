@@ -14,5 +14,13 @@ router.get("/:category", (req, res) => {
     res.json(output);
 });
 
+router.get("/shop/products", (req, res) => {
+
+    const products = productList; 
+ 
+    res.json(products);
+});
+
+
 module.exports = router;                   
 

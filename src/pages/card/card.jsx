@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./card.css";
 import Counters from '../../components/count/counters';
 import useProfile from '../../hooks/Profile';
-
+import Contactbutton from '../../components/shared/Authentication/contactbutton';
 
 
 function Card() {
@@ -64,6 +64,10 @@ function Card() {
 
                         </div>
                     )}
+                    <br/>
+                    <h3 className="vragen_card">nog vragen</h3>
+                    <Contactbutton/>
+                    <br/><br/><br/><br/>
                 </div>
             </div>
         </div>
