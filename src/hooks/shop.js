@@ -3,7 +3,7 @@ import ShopService from "../services/ShopService";
 
 export function useShop() {
     const [loading, setLoading] = useState(false);
-    const [ShopData, setShopData] = useState();
+    const [shopData, setShopData] = useState([]);
     
     // Admin
     const getShopData = useCallback((async = false) => {
@@ -29,7 +29,7 @@ export function useShop() {
             // state variables
             loading,
             // data variables
-            ShopData,
+            shopData,
             // methods
             getShopData,
         };
@@ -37,7 +37,7 @@ export function useShop() {
         // state variables
         loading, 
         // data variables
-        ShopData,
+        shopData,
         // methods
         getShopData,
     ]);

@@ -1,0 +1,12 @@
+.blok{
+    width: 300px;
+    height: 1960px;
+    float: left;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.hoi{
+    width: 140px;
+    height: 60px;
+}

@@ -1,40 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import './product.css';
 import Image from './images/image';
-import useShop from "../../hooks/shop";
 
- function Product() {
-    const {
-        // loading,
-        shopData,
-        getShopData,
-    } = useShop();
-
-    const [ShowShopData, setShowShopData] = useState(false);
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        getShopData(false); // initial render-*/
-        console.log(shopData);
-    }, []);
-
+function Product({ product }) {
     return (
-    <div className="product">
-        <div className="imageblok">
-            <Image />
-            <br />          
-            <div className="infobox_shop">
-                <p className="shop_text">
-                    Prijs:{shopData?.products.shirts}
+        <div className="product">
+            <div className="imageblok">
+                <p>
+                    <img width="245px" height="300px" src={product?.url} />
                 </p>
-                <button className="winkelmand2">winkelmand toevoegen</button>
+                <br />
+                <div className="infobox_shop">
+                    <p className="shop_text">
+                        Naam: {product?.naam}
+                    </p>
+                    <p className="shop_text">
+                        Prijs: {product?.prijs}
+                    </p>
+                    <button className="winkelmand2">winkelmand toevoegen</button>
+                </div>
+                <br />
             </div>
-            <br/>
         </div>
-    </div>
     );
 }
-
 
 // handleIncrement = product => {
 //     console.log(product);   

@@ -4,7 +4,15 @@ const express = require("express");
 const router = express.Router();
 
 
-// Mocked data 
+// all products
+router.get("/products", (req, res) => {
+
+    const products = productList;
+
+    res.json(products);
+});
+
+// date per category
 router.get("/:category", (req, res) => {
 
     const category = req.params.category;
@@ -12,13 +20,6 @@ router.get("/:category", (req, res) => {
     const output = productList[category]; 
 
     res.json(output);
-});
-
-router.get("/shop/products", (req, res) => {
-
-    const products = productList; 
- 
-    res.json(products);
 });
 
 

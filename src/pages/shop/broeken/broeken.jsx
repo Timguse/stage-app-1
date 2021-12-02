@@ -3,9 +3,6 @@ import '../about/about';
 import './shop.css';
 import Product from '../../components/product/product';
 import useShop from "../../hooks/shop";
-// import { Link } from 'react-router-dom';
-// import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
 
 function Shop() {
 
@@ -33,8 +30,7 @@ function Shop() {
             {!showWinkelData && (
                 <div className="blok">
                     <br/><br/><br/><br/>
-                    <button className="hoi" onClick={toggleButtonWinkel}>verberg winkel</button><br/>
-
+                    <button className="hoi" onClick={toggleButtonWinkel}>verberg winkel</button>
                 </div>
             )}
             {showWinkelData && (
@@ -46,7 +42,7 @@ function Shop() {
             )}
 
             {loading && (
-                shopData?.shirts.map((item) => <Product key={item.naam} product={item} />)
+                shopData?.broeken.map((item) => <Product key={item.naam} product={item} />)
             )};
 
         </div>
